@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.9
+%define		kdeframever	6.10
 %define		qtver		5.15.2
 %define		kfname		kplotting
 #
 Summary:	Data plotting
 Name:		kf6-%{kfname}
-Version:	6.9.0
+Version:	6.10.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	12f538cae926f90c2a48be1a084fc232
+# Source0-md5:	0bb812ba26c4f743f18196ca34325ec4
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel
 BuildRequires:	Qt6Gui-devel >= 5.3.1
