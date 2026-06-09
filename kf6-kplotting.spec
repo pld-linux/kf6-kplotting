@@ -49,6 +49,24 @@ consists of a QList of QPointF's, each specifying the X,Y coordinates
 of a data point. KPlotObject also specifies the "type" of data to be
 plotted (POINTS or CURVE or POLYGON or LABEL).
 
+%description -l pl.UTF-8
+KPlotWidget jest klasą wywiedzioną z QtWidget, która dostarcza
+wirtualną klasę bazową do łatwego rysowania danych. Pomysł za
+KPlotWidget jest taki, że masz tylko podać informację w "jednostkach
+danych", np. naturalne jednostki rysowanych danych. KPlotWidget
+automatycznie przekształci wszystko w piksele na ekranie.
+
+KPlotWidget rysuje linie współrzędnych, ze znacznikami i etykietami.
+Automatycznie ustala ile znaczników użyć i w którym miejscu w oparciu
+o zakresy danych podane dla wykresu. Zmieniasz je wywołując
+`setLimits(double x1, double x2, double y1, double y2)`.
+
+Dane, które mają być rysowane są zachowywane przy użyciu klasy
+KPlotObject. KPlotObject składa się z listy (QList) punktów (QPointF).
+Każdy punkt wskazuje współrzędne X,Y. KPlotObject konkretyzuje też
+"typ" danych do narysowania (PUNKTY lub KRZYWA, lub WIELOBOK, lub
+ETYKIETA).
+
 %package devel
 Summary:	Header files for %{kfname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kfname}
